@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e45b38406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#home"><img src="images/logo.png" alt="sorry" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello,I'm <span>Abhi Sheta</span> <br>from Compiler</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------about------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo2.png" alt="sorry">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>🚀 Welcome to my digital domain! I'm Abhi Sheta, an ambitious IT student at Birla Vishvakarma
+                        Mahavidhyalay (BVM) with a fervent passion for web development and problem-solving.<br>
+
+                        💡 Armed with a solid foundation in IT fundamentals and a keen eye for detail, I'm on a mission
+                        to revolutionize the digital landscape. From HTML, CSS, JavaScript,PHP,React to the latest
+                        frameworks and technologies, I'm constantly honing my skills to stay at the forefront of
+                        industry trends.<br>
+
+
+                        💻 Let's connect and collaborate! Whether you're looking to bring your digital ideas to life,
+                        solve complex technical puzzles, or simply share insights on the ever-evolving IT landscape, I'm
+                        here to be your ally in innovation.<br>
+
+                        📩 Feel free to reach out for exciting opportunities, partnerships, or just a friendly chat.
+                        Together, let's code a brighter future</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WEB DEVELOPMENT</span><br>Building Websites</li>
+                            <li><span>FRONTEND</span><br>HTML,CSS,JAVASCRIPT,REACT</li>
+                            <li><span>BACKEND</span><br>PHP,MYSQL</li>
+                            <li><span>PROBLEM SOLVING</span><br>C,C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>JAN-2024 TO MAR-2024</span><br>Web Development Internhip at RINEX</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech(I.T.) - BVM Engineering College</li>
+                            <li><span>2020-2022</span><br>SSC - Vivek Vidhyalay</li>
+                            <li><span>2020</span><br>HSC - V.N. Godhani English School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------- services------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and engaging interfaces for websites or
+                        web applications. It involves the selection of color schemes, typography, graphic elements, and
+                        layout to provide a cohesive and attractive user experience. Web designers focus on creating
+                        designs that align with the brand identity, usability best practices, and the target audience’s
+                        expectations.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Responsive Web Development</h2>
+                    <p>Responsive web development services yield websites that adapt and provide an optimal viewing
+                        experience across a variety of devices and screen sizes. This web solution utilizes flexible
+                        grids, media queries, and other techniques to ensure a consistent and user-friendly experience
+                        across different platforms.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Full-stack development involves both front-end and backend development. Therefore, full-stack
+                        developers possess a broad skill set that allows them to handle all layers of web application
+                        development. They are proficient in multiple programming languages, frameworks, and technologies
+                        required to build end-to-end web solutions.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------portfolio----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/hotel.jpg" alt="sorry1">
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>The Hotel Management System project is a comprehensive web application designed to streamline
+                            the operations of a hotel, enhancing efficiency and improving guest experience. Developed
+                            using HTML, CSS, and JavaScript.
+
+                            Key Features:
+
+                            User Authentication: The system allows hotel staff to securely log in and access their
+                            respective functionalities based on roles such as receptionists, managers, and housekeeping
+                            staff.
+
+                            Room Booking: Guests can easily browse through available rooms, view detailed information
+                            including amenities and pricing, and book their preferred accommodation seamlessly. The
+                            system ensures real-time updates on room availability and manages reservations effectively.
+
+                            Reservation Management: Hotel staff can manage reservations efficiently, including creating,
+                            modifying, and canceling bookings. Automated notifications are sent to guests to confirm
+                            their reservations and provide relevant details.
+
+                            Check-In and Check-Out: The system facilitates smooth check-in and check-out processes,
+                            allowing guests to complete necessary formalities swiftly. Staff can efficiently manage
+                            guest arrivals and departures, update room status, and handle payment transactions
+                            seamlessly.
+
+                            Room Service and Amenities: Guests can request room service, additional amenities, or
+                            maintenance services through the system. Staff receive notifications promptly, enabling
+                            timely responses to guest requests and ensuring a pleasant stay experience.
+
+                            Billing and Invoicing: The system generates accurate bills and invoices based on guest
+                            bookings, additional services availed, and any applicable charges. It supports multiple
+                            payment methods and provides detailed transaction history for reference.
+
+                            Reporting and Analytics: Hotel management can access comprehensive reports and analytics to
+                            gain insights into occupancy rates, revenue trends, guest preferences, and more. This
+                            data-driven approach facilitates informed decision-making and strategic planning.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/estate.jpg" alt="sorry2">
+                    <div class="layer">
+                        <h3>Real Estate Website</h3>
+                        <p>The Real Estate Website project is a dynamic web application aimed at connecting buyers,
+                            sellers, and real estate agents in the property market. Developed using a combination of
+                            HTML, CSS, JavaScript, and PHP, this project offers an intuitive platform for users to
+                            search, list, and explore properties seamlessly.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="" alt="sorry3">
+                    <div class="layer">
+                        <h3>Socila Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, sit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    </div>
+    <!-- ----------------------contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>shetaabhi91718.abs@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8320780540</p>
+                    <div class="social-icons">
+                        <a href="https://in.linkedin.com/in/abhi-sheta-649b00263?trk=people-guest_people_search-card"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AbhiSheta"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="images/Abhi Sheta (1).pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" name="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Abhi. Made By Abhi Sheta</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
